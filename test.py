@@ -20,6 +20,17 @@ a = a-b
 b = a+b
 a = b-a
 
+# celsius to farenhight
 print("a", a)
 print("b", b)
+
+print("Enter in celsius")
+c = float(input())
+
+f = ((c*9)/5)+32
+
+print("F = ", f)
+
+ai_master = 15//27//9
+print(ai_master) 
 
