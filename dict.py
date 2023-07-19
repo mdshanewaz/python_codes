@@ -59,3 +59,22 @@ print(employee_2)
 
 employee_3 = employee.copy()
 print(employee_3)
+
+my_dict01 = {
+    1 : {
+        "Name" : "Sazzad",
+        "Age" : 16
+    },
+
+    2 : {
+        "Roll" : 10,
+        "Level" : "HSC"
+    }
+}
+
+print(my_dict01[2]["Roll"])
+
+my_dict01[2]["Roll"] = 7
+my_dict01[1]["School"] = "FGC"
+print(my_dict01[2])
+print(my_dict01[1])
