@@ -1,7 +1,7 @@
 import os
 import pathlib
 
-path = '../Folder1/'
+path = '../../Folder1/'
 all_files = os.listdir(path)
 
 for files in all_files:
