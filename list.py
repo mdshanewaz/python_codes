@@ -13,3 +13,5 @@ d_list = [1,2,3,4,5,6,7,8,9,13,14,16,19,20]
 e_list = [i for i in d_list if i%2 != 0]
 
 print(e_list)
+
+new_v = "Hello"
