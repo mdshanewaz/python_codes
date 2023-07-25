@@ -1,6 +1,7 @@
 class Person:
-    name = "Shah Wali Ullah"
-    print(name)
-
-obj1 = Person()
-obj2 = Person()
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+    
+persoon_1 = Person()
