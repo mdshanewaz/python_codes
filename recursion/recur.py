@@ -13,3 +13,11 @@ def my_count_2(n):
     print(n)
 
 my_count_2(1)
+
+def factor(n):
+    if n <= 1:
+        return 1
+    m = factor(n-1)
+    return m*n
+
+print(factor(5))
