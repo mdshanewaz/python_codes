@@ -13,7 +13,8 @@ another_funct(my_fun)
 def greet(name):
     def hello():
         return "Hello my name is " + name
-    return  hello()
+    return  hello
+
 VAR = greet("Shawon")
 print(greet)
 print(greet("Shawon"))
@@ -23,7 +24,7 @@ def great(fun):
     def inner():
         fun()
         print("This is form inner of great")
-    return inner()
+    return inner
 
 @great
 def hellio():
