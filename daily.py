@@ -19,14 +19,93 @@
 #     print("Shipping is not available") 
 
 
-n = int(input("n = "))
+# n = int(input("n = "))
 
-if n%2 != 0:
-    print("Weird")
-else:
-    if n >= 1 and n <= 5:
-        print("Not Weird")
-    elif n >= 6 and n<= 20:
-        print("Weird")
+# if n%2 != 0:
+#     print("Weird")
+# else:
+#     if n >= 1 and n <= 5:
+#         print("Not Weird")
+#     elif n >= 6 and n<= 20:
+#         print("Weird")
+#     else:
+#         print("Not Weird")
+
+# def plusMinus(arr):
+#     # Write your code here
+#     n = len(arr)
+#     p = 0
+#     ne = 0
+#     z = 0
+    
+#     for i in arr:
+#         if i > 0:
+#             p = p+1
+#         elif i < 0:
+#             ne = ne+1
+#         else:
+#             z = z+1
+    
+#     p = p/n
+#     ne = ne/n
+#     z = z/n
+
+#     print("{:.6f}".format(p))
+#     print("{:.6f}".format(ne))
+#     print("{:.6f}".format(z))
+
+# plusMinus([1, 1, 0, -1, -1])
+
+
+# def miniMaxSum(arr):
+#     sum = 0
+#     arr = sorted(arr)
+#     for i in arr:
+#          sum = sum + i
+    
+#     min = sum - arr[-1]
+#     max = sum - arr[0]
+
+#     print(min, max)
+
+
+# miniMaxSum([1, 3, 5, 7, 9])
+
+def timeConversion(s):
+
+    o = ''
+    t = ''
+    print(s)
+
+    for i in range(8, 10):
+        o = o + s[i]
+    
+    for i in range(0, 2):
+        t = t + s[i]
+    
+    t = int(t)
+
+    if o == 'AM':
+        if t == 12:
+            t = str('00')
+        else:
+            t = '0' + str(t)
     else:
-        print("Not Weird")
+        if t == 12:
+            t = t
+        else:
+            t = t+12
+    
+    t = str(t)
+    print("o = ", o)
+    print(t)
+    print(type(t))
+
+    
+    s = t + s[2:] 
+    s = s.replace(o, '')
+
+    print(s)
+
+
+timeConversion('12:45:54PM')
