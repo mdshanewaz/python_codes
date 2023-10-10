@@ -71,41 +71,64 @@
 
 # miniMaxSum([1, 3, 5, 7, 9])
 
-def timeConversion(s):
+# def timeConversion(s):
 
-    o = ''
-    t = ''
-    print(s)
+#     o = ''
+#     t = ''
+#     print(s)
 
-    for i in range(8, 10):
-        o = o + s[i]
+#     for i in range(8, 10):
+#         o = o + s[i]
     
-    for i in range(0, 2):
-        t = t + s[i]
+#     for i in range(0, 2):
+#         t = t + s[i]
     
-    t = int(t)
+#     t = int(t)
 
-    if o == 'AM':
-        if t == 12:
-            t = str('00')
-        else:
-            t = '0' + str(t)
+#     if o == 'AM':
+#         if t == 12:
+#             t = str('00')
+#         else:
+#             t = '0' + str(t)
+#     else:
+#         if t == 12:
+#             t = t
+#         else:
+#             t = t+12
+    
+#     t = str(t)
+#     print("o = ", o)
+#     print(t)
+#     print(type(t))
+
+    
+#     s = t + s[2:] 
+#     s = s.replace(o, '')
+
+#     print(s)
+
+# timeConversion('12:45:54PM')
+
+def findMedian(arr):
+    arr = sorted(arr)
+    print(arr)
+
+    n = len(arr)
+    #print(n)
+
+    if n % 2 == 0:
+        n = n 
     else:
-        if t == 12:
-            t = t
-        else:
-            t = t+12
+        n = n + 1
     
-    t = str(t)
-    print("o = ", o)
-    print(t)
-    print(type(t))
+    #print(n)
 
-    
-    s = t + s[2:] 
-    s = s.replace(o, '')
+    n = n / 2
+    n = int(n)
+    n= n-1
 
-    print(s)
+    #print(n)
 
+    print(arr[n]) 
 
-timeConversion('12:45:54PM')
+findMedian([0, 1, 2, 4, 6, 5, 3])        
